@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+   body{
+    background-image: linear-gradient(black , white 20%);
+    /* background-color: black; */
+  }
+
+  .zone1 {
+    /* background-color: blue; */
+    text-align:center;
+    height: 50px;
+    width: 100%;
+  }
+  
+  
+  .zone1 a {
+    /* border: 1px solid #999; */
+    display: inline-block;
+    align-content: center; 
+    border-radius: 10%;
+    /* margin-left: 10px; */
+    font-size: 24px;
+    cursor: pointer;
+    /* color: #999; */
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+  }
+  .zone2 {
+    /* background-color: greenyellow; */
+    text-align:center;
+    color: #999;
+    width: 100%;
+    height: 40px;
+  }
+  .iconMargin{
+    margin-left: 10px;
+  }
+  .zoneMargin{
+    margin-left: 30px;
+  }
+  
+  .zone3{
+    background-color: #222;
+    text-align: center;
+    font-size: 10px;
+    height: 30px;
+  }
+  .bottomBar{
+    /* background-color: aqua; */
+    background-color: #222;
+    margin-top: 15%;
+    color: white;
+    height: 100px;
+    width: auto;
+  }
+
+  .loginPush{
+    /* background-color: hotpink; */
+    width: auto;
+    height: 130px;
+  }
+  
+  .btn{
+    background-color: #222;
+    border-style: solid;
+    border-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 120px;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+  }
+  .btn:hover {
+    background-color: aqua;
+    text-decoration: none;
+    color: black;
+  }
+
+  .box{
+    /* background-color: aquamarine; */
+    padding-top: 25px;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+  }
+  .boxA{
+      /* background-color: rgb(16, 214, 59); */
+      /* display: inline-block; */
+      float: left;
+      width: 370px;
+      height: auto;
+  }
+  .boxB{
+      /* background-color: rgb(218, 49, 189); */
+      /* display: inline-block; */
+      background-color: rgb(66, 62, 62);
+      color: aliceblue;
+      float: right;
+      width: 420px;
+      height: auto;
+  }
+  .boxC{
+      /* background-color: pink; */
+      display: inline-block;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      margin-top: 20px;
+      width: 800px;
+      height: 40px;
+  }
+  
+  .line{
+    background-color: #222;
+    margin: auto;
+    width: 800px;
+    height: 5px;
+  }
+  .gray{
+    color: rgb(90, 90, 90);
+  }
+  .orderClick{
+    text-decoration: none;
+    /* color: rgb(44, 44, 44); */
+    cursor: pointer;
+  }
+  table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+th {
+  background-color: cyan;
+  color: black;
+}
+
+th,
+td {
+  width: 150px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+
+  </style>
+  <title>8A-衣服</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="static\css\login.css"> -->
+{% load static %}
+</head>
+<body>
+<!-- NAV BAR -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">8A-衣服</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Skateboards <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/category/M/SK">Boards</a></li>
+            <!-- <li><a href="">Hardware</a></li> -->
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">MEN <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/category/M/S">TEES</a></li>
+            <li><a href="/category/M/J">JACKETS</a></li>
+            <li><a href="/category/M/H">HATS</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WOMEN <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/category/W/S">TEES</a></li>
+            <li><a href="/category/W/J">JACKETS</a></li>
+            <li><a href="/category/W/H">HATS</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a class="dropdown-toggle" href="/cart"><span class="fa fa-shopping-cart"
+              style="font-size:22px">{{request.session.cartnum}}</span></a></li>
+        {% if request.session.userid == None %}
+        <li><a href="/account/login?next={{ request.path|urlencode }}"><span class="glyphicon glyphicon-user"></span>
+            Sign In</a></li>
+        {% else  %}
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Hello {{user.fname}} <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/account/{{user.id}}">ACCOUNT</a></li>
+            <li><a href="/logout">LOGOUT</a></li>
+          </ul>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+  <!-- END OF NAV BAR -->
+
+
+
+  
+<div class="loginPush"></div>
+
+
+<div class="line"></div>
+
+
+<div class="box">
+    <div class="boxA">
+        <p><u>Order ID#</u></p>
+        <h4>#10{{order.id}}</h4>
+
+        <p><u>Order Status:</u></p>
+        <h4>{{order.Status}}</h4>
+
+        <p><u>Shipped to</u></p>
+        <h4>{{addy.addy}} {{addy.city}}, {{addy.state}} United States {{addy.zip_code}}</h4>
+
+        <p><u>Order Placed:</u></p>
+        <h4>{{order.date}}</h4>
+    </div>
+
+    <div class="boxB">
+        <p><u>Products</u></p>
+        <table>
+            <thead>
+              <th>product</th>
+              <th>price</th>
+              <th>Quantity</th>
+            </thead>
+        
+            {% for item in orderItems %}
+            <tr>
+              <td>{{item.product.name}}/{{item.size}}</td>
+              <td>${{item.product.price}}</td>
+              <td>{{item.quantity}}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+        <h3>Total: ${{order.price}}</h3>
+
+    </div>
+
+    <div class="boxC">
+        <a href="/account/{{user.id}}">Return to Account Details</a>
+    </div>
+</div>
+
+<!-- END OF Account Info -->
+
+
+
+
+
+    <!-- BOTTOM BAR -->
+<div class="bottomBar">
+
+  <div class="zone1">
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="iconMargin fa fa-instagram"></a>
+    <a href="#" class="iconMargin fa fa-github"></a>
+    <a href="#" class="iconMargin fa fa-facebook"></a>
+  </div>
+
+  <div class="zone2">
+    <a>Contact Us</a>
+    <a class="zoneMargin">Order Policy</a>
+    <a class="zoneMargin">Shipping Policy</a>
+  </div>
+
+  <div class="zone3">
+    <p>© 2020 8A-APPAREL</p>
+  </div>
+</div>
+    <!-- END OF BOTTOM BAR -->
+
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+   body{
+    background-image: linear-gradient(black , white 20%);
+    /* background-color: black; */
+  }
+  .subHeader{
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  color: rgb(44, 44, 44);
+  letter-spacing: 0.025em;
+  padding-bottom: 7px;
+  font-weight: normal;
+  text-align: center;
+  padding-right: 8px;
+  line-height: 24px;
+  padding-left: 8px;
+  font-size: 20px;
+  display: block;
+  padding-top: 20px;
+}
+.subHeader2{
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  color: rgb(44, 44, 44);
+  letter-spacing: 0.025em;
+  padding-bottom: 7px;
+  font-weight: normal;
+  text-align: center;
+  padding-right: 8px;
+  line-height: 24px;
+  padding-left: 8px;
+  font-size: 20px;
+  display: block;
+  /* padding-top: 20px; */
+}
+.subHeader3{
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  color: rgb(44, 44, 44);
+  letter-spacing: 0.025em;
+  font-weight: normal;
+  text-align: center;
+  padding-right: 8px;
+  line-height: 24px;
+  padding-left: 8px;
+  font-size: 15px;
+  display: block;
+}
+
+  .zone1 {
+    /* background-color: blue; */
+    text-align:center;
+    height: 50px;
+    width: 100%;
+  }
+  
+  
+  .zone1 a {
+    /* border: 1px solid #999; */
+    display: inline-block;
+    align-content: center; 
+    border-radius: 10%;
+    /* margin-left: 10px; */
+    font-size: 24px;
+    cursor: pointer;
+    /* color: #999; */
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+  }
+  .zone2 {
+    /* background-color: greenyellow; */
+    text-align:center;
+    color: #999;
+    width: 100%;
+    height: 40px;
+  }
+  .iconMargin{
+    margin-left: 10px;
+  }
+  .zoneMargin{
+    margin-left: 30px;
+  }
+  
+  .zone3{
+    background-color: #222;
+    text-align: center;
+    font-size: 10px;
+    height: 30px;
+  }
+  .bottomBar{
+    /* background-color: aqua; */
+    background-color: #222;
+    margin-top: 15%;
+    color: white;
+    height: 100px;
+    width: auto;
+  }
+
+  .loginPush{
+    /* background-color: hotpink; */
+    width: auto;
+    height: 130px;
+  }
+  
+  
+  .btn{
+    background-color: #222;
+    border-style: solid;
+    border-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 120px;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+  }
+  .btn:hover {
+    background-color: aqua;
+    text-decoration: none;
+    color: black;
+  }
+  .topBox{
+    /* background-color: aqua; */
+    margin-top: 80px;
+    height: auto;
+    width: 900px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .bottomBox{
+    /* background-color: aquamarine; */
+    margin: auto;
+    width: 900px;
+    height: auto;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th {
+    font-size: 25px;
+    border-bottom: 1px solid black;
+    text-align: left;
+    padding: 8px;
+  }
+  td{
+    font-size: 18px;
+    padding: 30px;
+  }
+  .topBoxA{
+    /* background-color: blue; */
+    text-align: center;
+    margin: auto;
+    height: auto;
+    width: 400px;
+  }
+  .topBoxB{
+    /* background-color: blueviolet; */
+    
+    text-align: center;
+    margin: auto;
+    height: 300;
+    width: 200px;
+  }
+  .line{
+    background-color: #222;
+    margin: auto;
+    width: 800px;
+    height: 5px;
+  }
+  .gray{
+    color: rgb(90, 90, 90);
+  }
+  .orderClick{
+    text-decoration: none;
+    /* color: rgb(44, 44, 44); */
+    cursor: pointer;
+  }
+
+
+  </style>
+  <title>8A-衣服</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="static\css\login.css"> -->
+{% load static %}
+</head>
+<body>
+<!-- NAV BAR -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">8A-衣服</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Skateboards <span
+            class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/category/M/SK">Boards</a></li>
+          <!-- <li><a href="">Hardware</a></li> -->
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">MEN <span
+            class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/category/M/S">TEES</a></li>
+          <li><a href="/category/M/J">JACKETS</a></li>
+          <li><a href="/category/M/H">HATS</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WOMEN <span
+            class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/category/W/S">TEES</a></li>
+          <li><a href="/category/W/J">JACKETS</a></li>
+          <li><a href="/category/W/H">HATS</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown"><a class="dropdown-toggle" href="/cart"><span class="fa fa-shopping-cart"
+            style="font-size:22px">{{request.session.cartnum}}</span></a></li>
+      {% if request.session.userid == None %}
+      <li><a href="/account/login?next={{ request.path|urlencode }}"><span class="glyphicon glyphicon-user"></span>
+          Sign In</a></li>
+      {% else  %}
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Hello {{user.fname}} <span
+            class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/account/{{user.id}}">ACCOUNT</a></li>
+          <li><a href="/logout">LOGOUT</a></li>
+        </ul>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</nav>
+<!-- END OF NAV BAR -->
+
+<div class="loginPush"></div>
+
+
+<div class="line"></div>
+
+    <!-- Account Info -->
+<div class="topBox">
+  <h1 class="subHeader"><u>MY ACCOUNT</u></h1>
+  
+  <div class="topBoxA">
+    <h3><b>{{user.fname}} {{user.lname}}</b></h3>
+    <h4 class="gray">{{user.email}}</h4>
+    <!-- <a href="#">EDIT</a> -->
+  </div>
+
+  
+  
+  <div class="topBoxB">
+    <h1 class="subHeader3"><u>last shipped to Address</u></h1>
+    <h4 class="gray">{{lastAddy.addy}} {{lastAddy.city}}, {{lastAddy.state}} United States {{lastAddy.zip_code}} </h4>
+    <!-- <a href="#">EDIT</a> -->
+  </div>
+
+</div>
+
+
+<div class="bottomBox">
+  <h1 class="subHeader"><u>ORDER HISTORY</u></h1>
+  <!-- <h1>Everone's custs:</h1> -->
+  <table>
+    <thead>
+      <th>Order</th>
+      <th>Date</th>
+      <th>Status</th>
+      <th>Total</th>
+    </thead>
+
+    {% for order in orderList %}
+    <tr>
+      <td><a class="orderClick" href="/account/orderInfo/{{order.order.id}}"> #10{{order.order.id}}</a></td>
+      <td>{{order.order.date}}</td>
+      <td>{{order.order.Status}}</td>
+      <td>{{order.order.price}}</td>
+    </tr>
+      {% endfor %}
+
+  </table>
+</div>
+
+<!-- END OF Account Info -->
+
+
+
+
+
+    <!-- BOTTOM BAR -->
+<div class="bottomBar">
+
+  <div class="zone1">
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="iconMargin fa fa-instagram"></a>
+    <a href="#" class="iconMargin fa fa-github"></a>
+    <a href="#" class="iconMargin fa fa-facebook"></a>
+  </div>
+
+  <div class="zone2">
+    <a>Contact Us</a>
+    <a class="zoneMargin">Order Policy</a>
+    <a class="zoneMargin">Shipping Policy</a>
+  </div>
+
+  <div class="zone3">
+    <p>© 2020 8A-APPAREL</p>
+  </div>
+</div>
+    <!-- END OF BOTTOM BAR -->
+
+</body>
+</html>

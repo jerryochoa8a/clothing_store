@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    body {
+      /* background-image: linear-gradient(black , white 30%); */
+      background-color: #F2F3F4;
+    }
+
+    .subHeader {
+      -webkit-font-smoothing: antialiased;
+      text-transform: uppercase;
+      color: rgb(44, 44, 44);
+      letter-spacing: 0.025em;
+      padding-bottom: 7px;
+      font-weight: normal;
+      text-align: center;
+      padding-right: 8px;
+      line-height: 24px;
+      padding-left: 8px;
+      font-size: 20px;
+      display: block;
+      padding-top: 20px;
+    }
+
+    .zone1 {
+      /* background-color: blue; */
+      text-align: center;
+      height: 50px;
+      width: 100%;
+    }
+
+
+    .zone1 a {
+      /* border: 1px solid #999; */
+      display: inline-block;
+      align-content: center;
+      border-radius: 10%;
+      /* margin-left: 10px; */
+      font-size: 24px;
+      cursor: pointer;
+      color: #999;
+      padding: 10px;
+      height: 30px;
+      width: 30px;
+    }
+
+    .zone2 {
+      /* background-color: greenyellow; */
+      text-align: center;
+      color: #999;
+      width: 100%;
+      height: 40px;
+    }
+
+    .zone3 {
+      background-color: #222;
+      text-align: center;
+      font-size: 10px;
+      height: 30px;
+    }
+
+    .bottomBar {
+      /* background-color: aqua; */
+      background-color: #222;
+      margin-top: 15%;
+      color: white;
+      height: 100px;
+      width: auto;
+    }
+
+    .loginPush {
+      /* background-color: hotpink; */
+      width: auto;
+      height: 110px;
+    }
+
+    .loginBox {
+      /* background-color: red; */
+      margin-top: 80px;
+      height: 400px;
+      width: 350px;
+      margin: auto;
+    }
+
+    .loginBox input {
+      margin-left: 45px;
+      border: 1px solid black;
+      width: 250px;
+      height: 30px;
+      padding: 8px 10px;
+      border-radius: 0;
+      background-color: #F2F3F4;
+    }
+
+    .loginBox label {
+      margin-left: 45px;
+      margin-top: 10px;
+      font-size: 17px;
+    }
+
+    .loginBox a {
+      margin-left: 50px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .btn {
+      background-color: #222;
+      border-style: solid;
+      border-color: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      text-align: center;
+      align-self: center;
+      cursor: pointer;
+      margin-top: 30px;
+      margin-left: 110px;
+      font-size: 12px;
+      width: 100px;
+      height: 30px;
+    }
+
+    .btn:hover {
+      background-color: aqua;
+      text-decoration: none;
+      color: black;
+    }
+
+    .cAcc {
+      margin-left: 75px;
+      margin-top: 10px;
+    }
+
+    .cAcc a {
+      margin-left: 35px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .cAcc p {
+      margin-left: 5px;
+    }
+
+    .iconMargin {
+      margin-left: 10px;
+    }
+
+    .zoneMargin {
+      margin-left: 30px;
+    }
+
+    .messages {
+      /* background-color: black; */
+      width: 260px;
+      height: auto;
+      border: solid;
+      border-color: red;
+      margin: auto;
+    }
+  </style>
+  <title>8A-衣服</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="static\css\login.css">
+  {% load static %}
+</head>
+
+<body>
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">8A-衣服</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Skateboards <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/category/M/SK">Boards</a></li>
+            <!-- <li><a href="">Hardware</a></li> -->
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">MEN <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/category/M/S">TEES</a></li>
+            <li><a href="/category/M/J">JACKETS</a></li>
+            <li><a href="/category/M/H">HATS</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WOMEN <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/category/W/S">TEES</a></li>
+            <li><a href="/category/W/J">JACKETS</a></li>
+            <li><a href="/category/W/H">HATS</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a class="dropdown-toggle" href="/cart"><span class="fa fa-shopping-cart"
+              style="font-size:22px">{{request.session.cartnum}}</span></a></li>
+        {% if request.session.userid == None %}
+        <li><a href="/account/login?next={{ request.path|urlencode }}"><span class="glyphicon glyphicon-user"></span>
+            Sign In</a></li>
+        {% else  %}
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Hello {{user.fname}} <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">ACCOUNT</a></li>
+            <li><a href="/logout">LOGOUT</a></li>
+          </ul>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+  <!-- END OF NAV BAR -->
+
+  <div class="loginPush"></div>
+
+
+  {% if messages %}
+  <ul class="messages">
+    {% for message in messages %}
+    <li style="color: red;" {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+
+
+  <!-- LOGIN BOX -->
+  <div class="loginBox">
+    <h3><u class="subHeader">Create Account</u></h3>
+    <form action="/reg" method="POST">
+      {% csrf_token %}
+
+      <label for="fname">First Name</label><br />
+      <input type="text" name="fname"><br />
+
+      <label for="lname">Last Name</label><br />
+      <input type="text" name="lname"><br />
+
+      <label for="email">Email</label><br />
+      <input type="text" name="email"><br />
+
+      <label for="password">Password</label><br />
+      <input type="password" name="pass">
+
+      <button class="btn" type="submit">Create</button>
+    </form>
+    <div class="cAcc">
+      <p>Already have an account? </p>
+      <a href="/account/login">Customer Login</a>
+    </div>
+  </div>
+  <!-- END OF LOGIN BOX -->
+
+
+
+
+
+  <!-- BOTTOM BAR -->
+  <div class="bottomBar">
+
+    <div class="zone1">
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="iconMargin fa fa-instagram"></a>
+      <a href="#" class="iconMargin fa fa-github"></a>
+      <a href="#" class="iconMargin fa fa-facebook"></a>
+    </div>
+
+    <div class="zone2">
+      <a>Contact Us</a>
+      <a class="zoneMargin">Order Policy</a>
+      <a class="zoneMargin">Shipping Policy</a>
+    </div>
+
+    <div class="zone3">
+      <p>© 2020 8A-APPAREL</p>
+    </div>
+  </div>
+  <!-- END OF BOTTOM BAR -->
+
+</body>
+
+</html>

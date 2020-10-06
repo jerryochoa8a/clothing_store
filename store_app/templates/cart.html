@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    body {
+      background-image: linear-gradient(black, white 20%);
+      /* background-color: black; */
+    }
+
+    .subHeader {
+      -webkit-font-smoothing: antialiased;
+      text-transform: uppercase;
+      color: rgb(44, 44, 44);
+      letter-spacing: 0.025em;
+      padding-bottom: 7px;
+      font-weight: normal;
+      text-align: center;
+      padding-right: 8px;
+      line-height: 24px;
+      padding-left: 8px;
+      font-size: 20px;
+      display: block;
+      padding-top: 20px;
+    }
+
+    .subHeader2 {
+      -webkit-font-smoothing: antialiased;
+      text-transform: uppercase;
+      color: rgb(44, 44, 44);
+      letter-spacing: 0.025em;
+      padding-bottom: 7px;
+      font-weight: normal;
+      text-align: center;
+      padding-right: 8px;
+      line-height: 24px;
+      padding-left: 8px;
+      font-size: 20px;
+      display: block;
+      /* padding-top: 20px; */
+    }
+
+    .subHeader3 {
+      -webkit-font-smoothing: antialiased;
+      text-transform: uppercase;
+      color: rgb(44, 44, 44);
+      letter-spacing: 0.025em;
+      padding-bottom: 35px;
+      font-weight: normal;
+      text-align: center;
+      padding-right: 8px;
+      line-height: 24px;
+      padding-left: 8px;
+      font-size: 20px;
+      display: block;
+      /* padding-top: 20px; */
+    }
+
+    .zone1 {
+      /* background-color: blue; */
+      text-align: center;
+      height: 50px;
+      width: 100%;
+    }
+
+
+    .zone1 a {
+      /* border: 1px solid #999; */
+      display: inline-block;
+      align-content: center;
+      border-radius: 10%;
+      /* margin-left: 10px; */
+      font-size: 24px;
+      cursor: pointer;
+      /* color: #999; */
+      padding: 10px;
+      height: 30px;
+      width: 30px;
+    }
+
+    .zone2 {
+      /* background-color: greenyellow; */
+      text-align: center;
+      color: #999;
+      width: 100%;
+      height: 40px;
+    }
+
+    .iconMargin {
+      margin-left: 10px;
+    }
+
+    .zoneMargin {
+      margin-left: 30px;
+    }
+
+    .zone3 {
+      background-color: #222;
+      text-align: center;
+      font-size: 10px;
+      height: 30px;
+    }
+
+    .bottomBar {
+      /* background-color: aqua; */
+      background-color: #222;
+      margin-top: 15%;
+      color: white;
+      height: 100px;
+      width: auto;
+    }
+
+    .loginPush {
+      /* background-color: hotpink; */
+      width: auto;
+      height: 80px;
+    }
+
+    .btn {
+      background-color: #222;
+      border-style: solid;
+      border-color: black;
+      color: black;
+      text-decoration: none;
+      border-radius: 25px;
+      text-align: center;
+      align-self: center;
+      cursor: pointer;
+      margin-top: 30px;
+      margin-left: 120px;
+      font-size: 12px;
+      width: 100px;
+      height: 30px;
+    }
+
+    .btn:hover {
+      background-color: aqua;
+      text-decoration: none;
+      color: black;
+    }
+
+    .btnBox {
+      border-color: black;
+      align-self: center;
+      height: 40px;
+      width: 300px;
+      font-size: 18px;
+      border: solid;
+      background: transparent;
+    }
+
+    .box {
+      /* background-color: aqua; */
+      align-items: center;
+      /* height: 400px; */
+      height: auto;
+      width: 900px;
+      margin: auto;
+      /* margin-bottom: 40px; */
+    }
+
+    .boxA {
+      /* background-color: blue; */
+      display: inline-block;
+      /* text-align: center; */
+      /* height: 400px; */
+      height: auto;
+      width: 430px;
+    }
+
+    .boxB {
+      /* background-color: red; */
+      float: right;
+      text-align: center;
+      height: auto;
+      width: 430px;
+    }
+
+    .boxB h2 {
+      float: left;
+      font-size: 20px;
+    }
+
+    .box2d {
+      /* background-color: aqua; */
+      height: auto;
+      /* margin-top: 10px; */
+    }
+
+    .box2d button {
+      border-color: black;
+      align-self: center;
+      margin-left: 25px;
+      height: 40px;
+      width: 300px;
+      font-size: 18px;
+      border: solid;
+      background: transparent;
+    }
+
+    .cart-item {
+      /* background-color: lightpink; */
+      width: 400px;
+      height: 120px;
+    }
+
+    .cart-item img {
+      float: left;
+      height: 120px;
+      width: 120px;
+    }
+
+    .cart-item h3 {
+      font-size: 20px;
+      color: black;
+    }
+
+    .cart-item h4 {
+      font-size: 16px;
+      color: rgb(61, 59, 59);
+    }
+
+    .cart-item input {
+      width: 40px;
+    }
+
+    .cart-item a {
+      font-size: 13px;
+    }
+
+    .cart-item-line {
+      width: 400px;
+      height: 5px;
+      background-color: black;
+    }
+
+    .line {
+      background-color: #222;
+      margin: auto;
+      width: 800px;
+      height: 5px;
+    }
+
+    .removebtn {
+      background-color: transparent;
+      border-style: solid;
+      border-color: black;
+      color: black;
+      text-decoration: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 12px;
+      width: 80px;
+      height: 20px;
+    }
+
+    .removebtn:hover {
+      background-color: #FF0099;
+      text-decoration: none;
+      color: white;
+    }
+
+    .web-text-color {
+      color: rgb(28, 196, 196);
+    }
+
+    .qty-boxes {
+      font-size: 16px;
+      background-color: transparent;
+      border-style: solid;
+      border-color: black;
+      text-decoration: none;
+      text-align: center;
+      padding-top: 3px;
+      width: 30px;
+      height: 30px;
+    }
+
+    .qty-box {
+      font-size: 16px;
+      margin-left: 3px;
+      margin-right: 3px;
+      background-color: transparent;
+      border-style: solid;
+      border-color: black;
+      text-decoration: none;
+      text-align: center;
+      padding-top: 3px;
+      width: 30px;
+      height: 30px;
+    }
+
+    .qty-boxes:hover {
+      background-color: #FF0099;
+      text-decoration: none;
+      color: white;
+    }
+
+    .all-qty-box {
+      margin-bottom: 5px;
+      display: flex;
+      flex-direction: row
+    }
+
+    .num-padding-qty-box {
+      padding: 5px;
+    }
+
+    .cart-info {
+      margin-left: 135px;
+    }
+  </style>
+
+  <title>8A-衣服</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="static\css\login.css"> -->
+  {% load static %}
+</head>
+
+<body>
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">8A-衣服</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Skateboards <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/category/M/SK">Boards</a></li>
+            <!-- <li><a href="">Hardware</a></li> -->
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">MEN <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/category/M/S">TEES</a></li>
+            <li><a href="/category/M/J">JACKETS</a></li>
+            <li><a href="/category/M/H">HATS</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WOMEN <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/category/W/S">TEES</a></li>
+            <li><a href="/category/W/J">JACKETS</a></li>
+            <li><a href="/category/W/H">HATS</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a class="dropdown-toggle" href="/cart"><span class="fa fa-shopping-cart"
+              style="font-size:22px">{{request.session.cartnum}}</span></a></li>
+        {% if request.session.userid == None %}
+        <li><a href="/account/login?next={{ request.path|urlencode }}"><span class="glyphicon glyphicon-user"></span>
+            Sign In</a></li>
+        {% else  %}
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Hello {{user.fname}} <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">ACCOUNT</a></li>
+            <li><a href="/logout">LOGOUT</a></li>
+          </ul>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+  <!-- END OF NAV BAR -->
+  <div class="loginPush"></div>
+
+  <!-- CART -->
+  <h1 class="subHeader"><u>MY CART</u></h1>
+  <div class="line"></div>
+
+  <div class="box">
+
+    <div class="boxA">
+
+      {% for item in cartItems %}
+      <div class="cart-item">
+        <img src="{{item.product.image.url}}">
+        <div class="cart-info">
+
+          <h3><b>{{ item.product.name }} / {{item.size}}</b></h3>
+          <h4><b>${{item.product.price}}</b></h4>
+
+          <div class="all-qty-box">
+            <form action="/qtyDown/{{item.id}}" method="POST">
+              {% csrf_token %}
+              <button class="qty-boxes">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z" />
+                </svg>
+              </button>
+            </form>
+
+            <div class="qty-box">
+              <p>{{item.quantity}}</p>
+            </div>
+
+            <form action="/qtyUp/{{item.id}}" method="POST">
+              {% csrf_token %}
+              <button class="qty-boxes">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M6 12.796L11.481 8 6 3.204v9.592zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- <form action="/updateCart/{{item.id}}" id="upForm{{item.id}}" method="POST">
+            {% csrf_token %}
+            <input onchange="changeButton('{{item.id}}')" id="updateID{{item.id}}" name="update-qty" type="number" step="1" min="1" max="100"
+            value="{{item.quantity}}">
+            
+          </form> -->
+
+
+          <!-- <script>
+            function changeButton(itemID) {
+              var x = itemID;
+              var y = document.getElementById("updateID{{item.id}}").value
+              document.getElementById("upForm{{item.id}}").action = "/updateCart/" + x + "/" + y;
+              document.getElementById("upForm{{item.id}}").submit();
+              // document.getElementById('updateID').type = 'submit'
+              // document.getElementById('updateID').type = 'submit'
+              // document.getElementById("update-url").type = "submit";
+              // document.getElementById("qty2").value = x;
+              // document.getElementById("buttonTitle").innerHTML = "Update Cart";
+            }
+          </script> -->
+
+          <form action="/removeCartItem/{{item.id}}" method="POST">
+            {% csrf_token %}
+            <button class="removebtn" type="submit">REMOVE</button> <!--    remove button    -->
+          </form>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="boxB">
+      <h2>SUBTOTAL:</h2>
+      <h3 class="web-text-color">{{ cartPrice }}</h3><br>
+      <p>YOU WILL GET NOTIFIED VIA EMAIL ONCE YOUR ORDER SHIPS.</p>
+      <div class="box2d">
+
+        <form id="update-url" action="/checkout" method="POST">
+          {% csrf_token %}
+          <input type="hidden" id="qty2" name="update-qty" value="" />
+          <button class="btn" id="buttonTitle">Checkout</button>
+        </form>
+
+      </div>
+      <div class="box2d">
+        <form action="/">
+          <button class="btn">Continue Shopping</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <!-- END CART -->
+
+  <div class="line"></div>
+
+
+
+
+
+  <!-- BOTTOM BAR -->
+  <div class="bottomBar">
+
+    <div class="zone1">
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="iconMargin fa fa-instagram"></a>
+      <a href="#" class="iconMargin fa fa-github"></a>
+      <a href="#" class="iconMargin fa fa-facebook"></a>
+    </div>
+
+    <div class="zone2">
+      <a>Contact Us</a>
+      <a class="zoneMargin">Order Policy</a>
+      <a class="zoneMargin">Shipping Policy</a>
+    </div>
+
+    <div class="zone3">
+      <p>© 2020 8A-APPAREL</p>
+    </div>
+  </div>
+  <!-- END OF BOTTOM BAR -->
+
+</body>
+
+</html>

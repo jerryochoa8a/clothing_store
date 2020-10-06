@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    body {
+      background-image: linear-gradient(black , white 20%);
+      /* background-image: linear-gradient(black, white 33%); */
+      /* background-color: black; */
+    }
+
+    .jumboPush {
+      /* background-color: hotpink; */
+      width: auto;
+      height: 80px;
+    }
+
+    .jumbotron1 {
+      background-color: gray;
+      margin-top: 80px;
+      height: 350px;
+      width: 850px;
+      margin: auto;
+    }
+
+    .jumboImage {
+      /* object-fit: cover; */
+      width: 100%;
+      height: 100%;
+    }
+
+    .miniJumbotron {
+      background-color: gray;
+      margin-top: 80px;
+      height: 150px;
+      width: 800px;
+      margin: auto;
+    }
+
+    .miniJumboImage {
+      /* object-fit: cover; */
+      width: 100%;
+      height: 100%;
+    }
+
+    .subHeader {
+      -webkit-font-smoothing: antialiased;
+      text-transform: uppercase;
+      color: rgb(44, 44, 44);
+      letter-spacing: 0.025em;
+      padding-bottom: 7px;
+      font-weight: normal;
+      text-align: center;
+      padding-right: 8px;
+      line-height: 24px;
+      padding-left: 8px;
+      font-size: 20px;
+      display: block;
+      margin-top: 40px;
+    }
+
+    .shirtBox {
+      /* background-color: hotpink; */
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      margin-left: 55px;
+      margin-top: 20px;
+      height: 270px;
+      width: 150px;
+    }
+
+    .shirtBox p {
+      align-self: center;
+    }
+
+    .shirtBox div {
+      align-self: center;
+      margin: auto;
+    }
+
+    .shirtBox a {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .shirtImg {
+      background-color: navy;
+      width: 150px;
+      height: 150px;
+    }
+
+    .featGrid {
+      /* background-color: blueviolet; */
+      align-content: center;
+      margin-top: 200px;
+      padding-bottom: 70px;
+      height: auto;
+      width: 900px;
+      margin: auto;
+    }
+
+    .bottomBar {
+      /* background-color: aqua; */
+      background-color: #222;
+      margin-top: 20px;
+      color: white;
+      height: 100px;
+      width: auto;
+    }
+
+    .iconMargin {
+      margin-left: 10px;
+    }
+
+    .zoneMargin {
+      margin-left: 30px;
+    }
+
+    .cartBTN {
+      border: black;
+      border: solid;
+      text-decoration: none;
+      border-radius: 25px;
+      text-align: center;
+      align-self: center;
+      cursor: pointer;
+      font-size: 12px;
+      width: 100px;
+      height: 22px;
+    }
+
+    .cartBTN:hover {
+      background-color: aqua;
+      text-decoration: none;
+      color: black;
+    }
+
+    .cartBTN button {
+      text-decoration: none;
+      color: black;
+      padding: 0;
+      border: none;
+      background: none;
+    }
+
+    .underNav {
+      background-color: aqua;
+      height: 30px;
+      width: auto;
+    }
+
+    /* / */
+
+
+    .zone1 {
+      /* background-color: blue; */
+      text-align: center;
+      height: 50px;
+      width: 100%;
+    }
+
+
+    .zone1 a {
+      /* border: 1px solid #999; */
+      display: inline-block;
+      align-content: center;
+      border-radius: 10%;
+      /* margin-left: 10px; */
+      font-size: 24px;
+      cursor: pointer;
+      color: #999;
+      padding: 10px;
+      height: 30px;
+      width: 30px;
+    }
+
+    .zone2 {
+      /* background-color: greenyellow; */
+      text-align: center;
+      color: #999;
+      width: 100%;
+      height: 40px;
+    }
+
+    .zone3 {
+      background-color: #222;
+      text-align: center;
+      font-size: 10px;
+      height: 30px;
+    }
+
+    /* NEW */
+    .name {
+      color: #222;
+    }
+
+    .brand {
+      color: #222;
+    }
+
+    .price {
+      color: #222;
+    }
+
+    .web-text-color {
+      color: aqua;
+    }
+
+    .cart-dropdown-price {
+      background-color: #222;
+      color: white;
+      width: auto;
+      height: 30px;
+    }
+
+    .cart-dropdown-price h4 {
+      float: left;
+    }
+
+    .cart-dropdown-price h5 {
+      float: right;
+      margin-right: 20px;
+    }
+
+    .cart-dropdown-line {
+      background-color: aqua;
+      width: auto;
+      height: 5px;
+    }
+
+    .cart-dropdown-box {
+      background-color: blue;
+      margin: auto;
+      /* height: 130px; */
+      height: auto;
+      width: 300px;
+    }
+
+    .cart-dropdown-box-A {
+      background-color: gray;
+      float: left;
+      height: 120px;
+      width: 120px;
+    }
+
+    .cart-dropdown-box-B {
+      background-color: purple;
+      text-align: center;
+      float: right;
+      height: 120px;
+      width: 170px;
+    }
+
+    .cart-dropdown-box-B input {
+      border-color: black;
+      width: 40px;
+      border: solid;
+    }
+
+    .cart-title-box {
+      width: 350px;
+      height: 40px;
+      background-color: yellow;
+    }
+
+    .cart-button {
+      background-color: hotpink;
+      width: 350px;
+      height: 100px;
+    }
+  </style>
+  <title>8A-衣服</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="static\css\dashboard.css"> -->
+  {% load static %}
+</head>
+
+<body>
+
+
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">8A-衣服</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Skateboards <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/category/M/SK">Boards</a></li>
+            <!-- <li><a href="">Hardware</a></li> -->
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">MEN <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/category/M/S">TEES</a></li>
+            <li><a href="/category/M/J">JACKETS</a></li>
+            <li><a href="/category/M/H">HATS</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WOMEN <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/category/W/S">TEES</a></li>
+            <li><a href="/category/W/J">JACKETS</a></li>
+            <li><a href="/category/W/H">HATS</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a class="dropdown-toggle" href="/cart"><span class="fa fa-shopping-cart"
+              style="font-size:22px">{{request.session.cartnum}}</span></a></li>
+        {% if request.session.userid == None %}
+        <li><a href="/account/login?next={{ request.path|urlencode }}"><span class="glyphicon glyphicon-user"></span>
+            Sign In</a></li>
+        {% else  %}
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Hello {{user.fname}} <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/account/{{user.id}}">ACCOUNT</a></li>
+            <li><a href="/logout">LOGOUT</a></li>
+          </ul>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+  <!-- END OF NAV BAR -->
+
+
+
+  <div class="jumboPush"></div>
+
+  <!-- JUMBOTRON -->
+  <div class="jumbotron1">
+    {% for big in bigBanner %}
+    <img class="jumboImage" src="{{big.image.url}}">
+    {% endfor %}
+  </div>
+  <!-- END OF JUMBOTRON -->
+
+
+
+  <!-- NEW ARRIVALS  (only 4)-->
+  <h3><u class="subHeader">NEW ARRIVALS</u></h3>
+  <div class="featGrid">
+
+    {% for oneProd in newFour %}
+    <div class="shirtBox">
+      <a href="/info/{{oneProd.category}}/{{oneProd.id}}">
+        <img class="shirtImg" src="{{oneProd.image.url}}">
+        <p class="name"><b>{{oneProd.name}}</b></p>
+        <p class="brand">{{oneProd.brand}}</p>
+        <p class="price"><b>${{oneProd.price}}</b></p>
+      </a>
+      <!-- <form action="/addtocart/{{oneProd.id}}" method="POST">
+      {% csrf_token %}
+      <div class="cartBTN">
+        <button>ADD TO CART</button>
+      </div>
+    </form> -->
+    </div>
+    {% endfor %}
+
+  </div>
+  <!-- END NEW ARRIVALS -->
+
+  <!-- JUMBOTRON -->
+  <div class="miniJumbotron">
+    {% for small in smallBanner %}
+    <img class="miniJumboImage" src='{{small.image.url}}'></img>
+    {% endfor %}
+  </div>
+  <!-- END OF JUMBOTRON -->
+
+
+  <!-- FEATURED SHIRTS   -->
+  <h3><u class="subHeader">FEATURED PRODUCT</u></h3>
+  <div class="featGrid">
+
+    {% for prod in prods %}
+    <div class="shirtBox">
+      <a href="/info/{{prod.category}}/{{prod.id}}">
+        <img class="shirtImg" src="{{prod.image.url}}">
+        <p class="name"><b>{{prod.name}}</b></p>
+        <p class="brand">{{prod.brand}}</p>
+        <p class="price"><b>${{prod.price}}</b></p>
+      </a>
+      <!-- <form action="/addtocart/{{prod.id}}" method="POST">
+      {% csrf_token %}
+      <div class="cartBTN">
+        <button>ADD TO CART</button>
+      </div>
+    </form> -->
+    </div>
+    {% endfor %}
+
+
+
+    <!-- <div class="shirtBox">
+    <a href="/shirtOrHat/SOHId">
+      <img  class="shirtImg" src="//cdn.shopify.com/s/files/1/0342/5665/products/RESURRECTIONDECK_grande.jpg?v=1584652758"/>
+      <p><b>NAME</b></p>
+      <p>BRAND</p>
+      <p>$19.99</p>
+    </a>
+    <div class="cartBTN">
+      <a>ADD TO CART</a>
+    </div>
+  </div> -->
+
+
+  </div>
+  <!-- END OF FEATURED -->
+
+
+
+
+  <!-- SK8  (only 4)-->
+  <!-- <h3><u class="subHeader">SKATEBOARDS</u></h3>
+  <div class="featGrid"> 
+    
+    <div class="shirtBox">
+      <a href="/shirtOrHat/SOHId">
+        <img  class="shirtImg" src="//cdn.shopify.com/s/files/1/0342/5665/products/PS20W0032_DIRTY_P_PANELS_grande.jpg?v=1586040851"/>
+        <p><b>NAME</b></p>
+        <p>BRAND</p>
+        <p>$19.99</p>
+      </a>
+      <div class="cartBTN">
+        <a>ADD TO CART</a>
+      </div>
+    </div>
+
+    <div class="shirtBox">
+      <a href="/shirtOrHat/SOHId">
+        <img  class="shirtImg" src="//cdn.shopify.com/s/files/1/0342/5665/products/PS20W0032_DIRTY_P_PANELS_grande.jpg?v=1586040851"/>
+        <p><b>NAME</b></p>
+        <p>BRAND</p>
+        <p>$19.99</p>
+      </a>
+      <div class="cartBTN">
+        <a>ADD TO CART</a>
+      </div>
+    </div>
+
+    <div class="shirtBox">
+      <a href="/shirtOrHat/SOHId">
+        <img  class="shirtImg" src="//cdn.shopify.com/s/files/1/0342/5665/products/VEGETADECK_grande.jpg?v=1584986917"/>
+        <p><b>NAME</b></p>
+        <p>BRAND</p>
+        <p>$19.99</p>
+      </a>
+      <div class="cartBTN">
+        <a>ADD TO CART</a>
+      </div>
+    </div>
+
+    
+    <div class="shirtBox">
+      <a href="/shirtOrHat/SOHId">
+        <img  class="shirtImg" src="//cdn.shopify.com/s/files/1/0342/5665/products/VEGETADECK_grande.jpg?v=1584986917"/>
+        <p><b>NAME</b></p>
+        <p>BRAND</p>
+        <p>$19.99</p>
+      </a>
+      <div class="cartBTN">
+        <a>ADD TO CART</a>
+      </div>
+    </div>
+  
+  </div> -->
+  <!-- END SK8 -->
+
+  <!-- BOTTOM BAR -->
+  <div class="bottomBar">
+
+    <div class="zone1">
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="iconMargin fa fa-instagram"></a>
+      <a href="#" class="iconMargin fa fa-github"></a>
+      <a href="#" class="iconMargin fa fa-facebook"></a>
+    </div>
+
+    <div class="zone2">
+      <a>Contact Us</a>
+      <a class="zoneMargin">Order Policy</a>
+      <a class="zoneMargin">Shipping Policy</a>
+    </div>
+
+    <div class="zone3">
+      <p>© 2020 8A-APPAREL</p>
+    </div>
+  </div>
+  <!-- END OF BOTTOM BAR -->
+
+</body>
+
+</html>

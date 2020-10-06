@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    body {
+      /* background-image: linear-gradient(black , white 20%); */
+      background-color: white;
+    }
+
+    .subHeader {
+      -webkit-font-smoothing: antialiased;
+      text-transform: uppercase;
+      color: rgb(44, 44, 44);
+      letter-spacing: 0.025em;
+      padding-bottom: 7px;
+      font-weight: normal;
+      text-align: center;
+      padding-right: 8px;
+      line-height: 24px;
+      padding-left: 8px;
+      font-size: 20px;
+      display: block;
+      padding-top: 20px;
+    }
+
+    .subHeader2 {
+      -webkit-font-smoothing: antialiased;
+      text-transform: uppercase;
+      color: rgb(44, 44, 44);
+      letter-spacing: 0.025em;
+      padding-bottom: 7px;
+      font-weight: normal;
+      text-align: center;
+      padding-right: 8px;
+      line-height: 24px;
+      padding-left: 8px;
+      font-size: 20px;
+      display: block;
+      /* padding-top: 20px; */
+    }
+
+    .subHeader3 {
+      -webkit-font-smoothing: antialiased;
+      text-transform: uppercase;
+      color: rgb(44, 44, 44);
+      letter-spacing: 0.025em;
+      padding-bottom: 35px;
+      font-weight: normal;
+      text-align: center;
+      padding-right: 8px;
+      line-height: 24px;
+      padding-left: 8px;
+      font-size: 20px;
+      display: block;
+      /* padding-top: 20px; */
+    }
+
+    .zone1 {
+      /* background-color: blue; */
+      text-align: center;
+      height: 50px;
+      width: 100%;
+    }
+
+
+    .zone1 a {
+      /* border: 1px solid #999; */
+      display: inline-block;
+      align-content: center;
+      border-radius: 10%;
+      /* margin-left: 10px; */
+      font-size: 24px;
+      cursor: pointer;
+      /* color: #999; */
+      padding: 10px;
+      height: 30px;
+      width: 30px;
+    }
+
+    .zone2 {
+      /* background-color: greenyellow; */
+      text-align: center;
+      color: #999;
+      width: 100%;
+      height: 40px;
+    }
+
+    .iconMargin {
+      margin-left: 10px;
+    }
+
+    .zoneMargin {
+      margin-left: 30px;
+    }
+
+    .zone3 {
+      background-color: #222;
+      text-align: center;
+      font-size: 10px;
+      height: 30px;
+    }
+
+    .bottomBar {
+      /* background-color: aqua; */
+      background-color: #222;
+      margin-top: 15%;
+      color: white;
+      height: 100px;
+      width: auto;
+    }
+
+    .loginPush {
+      /* background-color: hotpink; */
+      width: auto;
+      height: 80px;
+    }
+
+    .btn {
+      background-color: #222;
+      border-style: solid;
+      border-color: black;
+      color: black;
+      text-decoration: none;
+      border-radius: 25px;
+      text-align: center;
+      align-self: center;
+      cursor: pointer;
+      margin-top: 30px;
+      margin-left: 120px;
+      font-size: 12px;
+      width: 100px;
+      height: 30px;
+    }
+
+    .btn:hover {
+      background-color: aqua;
+      text-decoration: none;
+      color: black;
+    }
+
+    .removeBtn {
+      background-color: red;
+      border-style: solid;
+      border-color: white;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+      align-self: center;
+      cursor: pointer;
+      /* margin-top: 30px; */
+      /* margin-left: 120px; */
+      font-size: 12px;
+      width: auto;
+      height: 25px;
+    }
+
+    .removeBtn:hover {
+      background-color: black;
+      text-decoration: none;
+      color: white;
+    }
+
+    .btnBox {
+      border-color: black;
+      align-self: center;
+      height: 40px;
+      width: 300px;
+      font-size: 18px;
+      border: solid;
+      background: transparent;
+    }
+
+    .box {
+      /* background-color: aqua; */
+      /* align-items: center; */
+      height: 500px;
+      width: 900px;
+      margin: auto;
+    }
+
+    .boxA {
+      /* background-color: blue; */
+      display: inline-block;
+      height: auto;
+      width: 430px;
+    }
+
+    .boxA h2 {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .boxB {
+      /* background-color: rgb(255, 0, 242); */
+      /* display: inline-block; */
+      float: right;
+      /* margin: auto; */
+      height: 500px;
+      /* height: auto; */
+      width: 405px;
+    }
+
+    .boxB h2 {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .btnBox {
+      /* background-color: aqua; */
+      border-color: transparent;
+      height: auto;
+      width: auto;
+    }
+
+    .btnBox button {
+      border-color: black;
+      align-self: center;
+      margin-left: 25px;
+      height: 40px;
+      width: 300px;
+      font-size: 18px;
+      border: solid;
+      background: transparent;
+    }
+
+    .cart-item {
+      /* background-color: lightpink; */
+      width: 400px;
+      height: 120px;
+    }
+
+    .cart-item img {
+      float: left;
+      height: 120px;
+      width: 120px;
+    }
+
+    .cart-item h3 {
+      font-size: 20px;
+      color: black;
+    }
+
+    .cart-item h4 {
+      font-size: 16px;
+      color: rgb(61, 59, 59);
+    }
+
+    .cart-item input {
+      width: 40px;
+    }
+
+    .cart-item a {
+      font-size: 13px;
+    }
+
+    .cart-item-line {
+      width: 400px;
+      height: 5px;
+      background-color: black;
+    }
+
+    .name {
+      display: inline-block;
+      /* background-color: yellow; */
+    }
+
+    .name input {
+      width: 200px;
+    }
+
+    .addy input {
+      width: 400px;
+    }
+
+    .city {
+      /* background-color: yellow; */
+      display: inline-block;
+    }
+
+    .city input {
+      width: 130px;
+    }
+
+    .state {
+      /* background-color: yellow; */
+      display: inline-block;
+    }
+
+    .state input {
+      width: 130px;
+    }
+
+    .zip {
+      /* background-color: yellow; */
+      display: inline-block;
+    }
+
+    .zip input {
+      width: 130px;
+    }
+
+    .cardNum input {
+      width: 260px;
+    }
+
+    .backCode {
+      /* background-color: yellow; */
+      display: inline-block;
+    }
+
+    .backCode input {
+      width: 130px;
+    }
+
+    .exDate {
+      /* background-color: yellow; */
+      display: inline-block;
+    }
+
+    .exDate input {
+      width: 130px;
+    }
+
+    .accepCards {
+      display: inline-block;
+    }
+
+    .email {
+      width: 300px;
+    }
+
+    .line {
+      background-color: #222;
+      margin: auto;
+      width: 800px;
+      height: 5px;
+    }
+
+    .web-text-color {
+      color: rgb(28, 196, 196);
+    }
+
+    .messages {
+      /* background-color: black; */
+      width: 260px;
+      height: auto;
+      border: solid;
+      border-color: red;
+      margin: auto;
+    }
+
+    input {
+      border: 1px solid;
+      border-color: gray;
+      padding: .5rem;
+      border-radius: .25rem;
+    }
+
+    label {
+      color: rgb(90, 88, 88);
+    }
+
+    select {
+      border: 1px solid;
+      width: 130px;
+      border-color: gray;
+      padding: .5rem;
+      border-radius: .25rem;
+    }
+  </style>
+  <title>8A-衣服</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!--STRIPE-->
+  <script src="https://js.stripe.com/v3/"></script>
+  <!--STRIPE-->
+  <!-- <link rel="stylesheet" href="static\css\login.css"> -->
+  {% load static %}
+</head>
+
+<body>
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">8A-衣服</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Skateboards <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/category/M/SK">Boards</a></li>
+            <!-- <li><a href="">Hardware</a></li> -->
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">MEN <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/category/M/S">TEES</a></li>
+            <li><a href="/category/M/J">JACKETS</a></li>
+            <li><a href="/category/M/H">HATS</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WOMEN <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/category/W/S">TEES</a></li>
+            <li><a href="/category/W/J">JACKETS</a></li>
+            <li><a href="/category/W/H">HATS</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a class="dropdown-toggle" href="/cart"><span class="fa fa-shopping-cart"
+              style="font-size:22px">{{request.session.cartnum}}</span></a></li>
+        {% if request.session.userid == None %}
+        <li><a href="/account/login?next={{ request.path|urlencode }}"><span class="glyphicon glyphicon-user"></span>
+            Sign In</a></li>
+        {% else  %}
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Hello {{user.fname}} <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">ACCOUNT</a></li>
+            <li><a href="/logout">LOGOUT</a></li>
+          </ul>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+  <!-- END OF NAV BAR -->
+  <div class="loginPush"></div>
+
+
+  {% if messages %}
+  <ul class="messages">
+    {% for message in messages %}
+    <li style="color: red;" {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+
+
+  <!-- CART -->
+  <h1 class="subHeader"><u>CHECKOUT</u></h1>
+  <div class="line"></div>
+
+  <div class="box">
+
+
+    <div class="boxA">
+
+      <h2>MY CART</h2><br>
+
+      {% for item in cartItems %}
+      <div class="cart-item">
+        <img src="{{item.product.image.url}}">
+        <h3><b>{{item.product.name}} / {{item.size}}</b></h3>
+        <h4><b>${{item.product.price}}</b></h4>
+        <!-- <input type="number"  step="1" min="1" max="100" value="{{ item.qty }}" name="" id=""> -->
+        <h4>Quantity: {{item.quantity}}</h4>
+        <!-- <a href="#">REMOVE ITEM</a> -->
+      </div>
+      {% endfor %}
+
+
+    </div>
+
+
+
+    <!-- box B -->
+    <div class="boxB">
+      <div>
+        <h3 class="web-text-color">Total: {{ cartPrice }}</h3>
+      </div>
+
+
+      <form action="/charge" method="post" id="payment-form">
+        {% if request.session.userid == None %}
+        <div>
+          <p>Already have an account? <a href="/account/login?next={{ request.path|urlencode }}">Log in</a></p>
+          <label for="email">Email</label>
+          <input type="email" name="email" class="email">
+        </div>
+        {% else  %}
+        <div>
+          <p>Logged In As: <b>{{user.fname}} {{user.lname}}</b></p>
+          <p>Email: <b>{{user.email}}</b></p>
+          <input type="hidden" name="email" value="{{user.email}}">
+          <a href="/logout2">Logout</a>
+        </div>
+        {% endif %}
+
+
+        <div>
+          <h2><u>CARD INFORMATION</u></h2>
+
+
+          <!-- <form action="/charge" method="post" id="payment-form"> -->
+          <!-- {% csrf_token %} -->
+
+          <input type="hidden" name="cartPrice" value="{{cartPrice}}">
+          <div class="form-row">
+            <label for="card-element">
+              Credit or debit card
+            </label>
+            <div id="card-element">
+              <!-- A Stripe Element will be inserted here. -->
+            </div>
+
+            <!-- Used to display form errors. -->
+            <div id="card-errors" role="alert"></div>
+          </div>
+
+
+          <script>
+            // Create a Stripe client.
+            var stripe = Stripe('pk_test_51HY4gxEB2brwFD1TEDOFbjTJHJjajLhh2M2vF8gcPiELry7cZ0il6xqBncroMuImqwfT8JNeSRszuMGApNZHqMMB00tPg2gXCM');
+
+            // Create an instance of Elements.
+            var elements = stripe.elements();
+
+            // Custom styling can be passed to options when creating an Element.
+            // (Note that this demo uses a wider set of styles than the guide below.)
+            var style = {
+              base: {
+                color: '#32325d',
+                fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+                fontSmoothing: 'antialiased',
+                fontSize: '16px',
+                '::placeholder': {
+                  color: '#aab7c4'
+                }
+              },
+              invalid: {
+                color: '#fa755a',
+                iconColor: '#fa755a'
+              }
+            };
+
+            // Create an instance of the card Element.
+            var card = elements.create('card', { style: style });
+
+            // Add an instance of the card Element into the `card-element` <div>.
+            card.mount('#card-element');
+
+            // Handle real-time validation errors from the card Element.
+            card.on('change', function (event) {
+              var displayError = document.getElementById('card-errors');
+              if (event.error) {
+                displayError.textContent = event.error.message;
+              } else {
+                displayError.textContent = '';
+              }
+            });
+
+            // Handle form submission.
+            var form = document.getElementById('payment-form');
+            form.addEventListener('submit', function (event) {
+              event.preventDefault();
+
+              stripe.createToken(card).then(function (result) {
+                if (result.error) {
+                  // Inform the user if there was an error.
+                  var errorElement = document.getElementById('card-errors');
+                  errorElement.textContent = result.error.message;
+                } else {
+                  // Send the token to your server.
+                  stripeTokenHandler(result.token);
+                }
+              });
+            });
+
+            // Submit the form with the token ID.
+            function stripeTokenHandler(token) {
+              // Insert the token ID into the form so it gets submitted to the server
+              var form = document.getElementById('payment-form');
+              var hiddenInput = document.createElement('input');
+              hiddenInput.setAttribute('type', 'hidden');
+              hiddenInput.setAttribute('name', 'stripeToken');
+              hiddenInput.setAttribute('value', token.id);
+              form.appendChild(hiddenInput);
+
+              // Submit the form
+              form.submit();
+            }
+          </script>
+        </div>
+
+
+
+
+
+
+
+
+        <h2><u>SHIPPING INFORMATION</u></h2><br>
+
+        {% csrf_token %}
+        <div class="name">
+          <label>First Name</label><br>
+          <input name="fname" type="text" value="{{user.fname}}">
+        </div>
+        <div class="name">
+          <label>Last Name</label><br>
+          <input type="text" name="lname" value={{user.lname }}>
+        </div>
+        <div class="addy">
+          <label>Address</label><br>
+          <input type="text" name="addy">
+        </div>
+        <div class="city">
+          <label>City</label><br>
+          <input type="text" name="city">
+        </div>
+        <div class="state">
+          <label>State</label><br>
+          <!-- <input type="text" name="state"> -->
+          <select name="state">
+            <option value="CA">CALIFORNIA</option>
+            <option value="AL">ALABAMA</option>
+            <option value="AK">ALASKA</option>
+            <option value="AZ">ARIZONA</option>
+            <option value="AR">ARKANSAS</option>
+            <option value="CO">COLORADO</option>
+            <option value="CT">CONNECTICUT</option>
+            <option value="DE">DELAWARE</option>
+            <option value="FL">FLORIDA</option>
+            <option value="GA">GEORGIA</option>
+            <option value="HI">HAWAII</option>
+            <option value="ID">IDAHO</option>
+            <option value="IL">ILLINOIS</option>
+            <option value="IN">INDIANA</option>
+            <option value="IA">IOWA</option>
+            <option value="KS">KANSAS</option>
+            <option value="KY">KENTUCKY</option>
+            <option value="LA">LOUISIANA</option>
+            <option value="ME">MAINE</option>
+            <option value="MD">MARYLAND</option>
+            <option value="MA">MASSACHUSETTS</option>
+            <option value="MI">MICHIGAN</option>
+            <option value="MN">MINNESOTA</option>
+            <option value="MS">MISSISSIPPI</option>
+            <option value="MO">MISSOURI</option>
+            <option value="MT">MONTANA</option>
+            <option value="NE">NEBRASKA</option>
+            <option value="NV">NEVADA</option>
+            <option value="NH">NEW HAMPSHIRE</option>
+            <option value="NJ">NEW JERSEY</option>
+            <option value="NM">NEW MEXICO</option>
+            <option value="NY">NEW YORK</option>
+            <option value="NC">NORTH CAROLINA</option>
+            <option value="ND">NORTH DAKOTA</option>
+            <option value="OH">OHIO</option>
+            <option value="OK">OKLAHOMA</option>
+            <option value="OR">OREGON</option>
+            <option value="PA">PENNSYLVANIA</option>
+            <option value="RI">RHODE ISLAND</option>
+            <option value="SC">SOUTH CAROLINA</option>
+            <option value="SD">SOUTH DAKOTA</option>
+            <option value="TN">TENNESSEE</option>
+            <option value="TX">TEXAS</option>
+            <option value="UT">UTAH</option>
+            <option value="VT">VERMONT</option>
+            <option value="VA">VIRGINIA</option>
+            <option value="WA">WASHINGTON</option>
+            <option value="WV">WEST VIRGINIA</option>
+            <option value="WI">WISCONSIN</option>
+            <option value="WY">WYOMING</option>
+          </select>
+        </div>
+        <div class="zip">
+          <label>Zip</label><br>
+          <input type="text" name="zip_code">
+        </div>
+
+        <div class="btnBox">
+          <button type="submit" class="btn">Pay {{ cartPrice }}</button>
+        </div>
+      </form>
+    </div>
+
+
+
+  </div>
+  <!-- END CART -->
+
+  <!-- <div class="line"></div> -->
+
+
+
+
+
+  <!-- BOTTOM BAR -->
+  <div class="bottomBar">
+
+    <div class="zone1">
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="iconMargin fa fa-instagram"></a>
+      <a href="#" class="iconMargin fa fa-github"></a>
+      <a href="#" class="iconMargin fa fa-facebook"></a>
+    </div>
+
+    <div class="zone2">
+      <a>Contact Us</a>
+      <a class="zoneMargin">Order Policy</a>
+      <a class="zoneMargin">Shipping Policy</a>
+    </div>
+
+    <div class="zone3">
+      <p>© 2020 8A-APPAREL</p>
+    </div>
+  </div>
+  <!-- END OF BOTTOM BAR -->
+
+</body>
+
+</html>
